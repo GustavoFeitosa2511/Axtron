@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel Admin - Cadastro de Produtos</title>
+</head>
+<body>
+    <h1>Cadastrar Produto</h1>
+    <form action="salvar.php" method="POST">
+        <label>Nome do Produto:</label><br>
+        <input type="text" name="nome" required><br><br>
+
+        <label>Descrição:</label><br>
+        <textarea name="descricao" rows="4" cols="40"></textarea><br><br>
+
+        <label>Preço (R$):</label><br>
+        <input type="number" name="preco" step="0.01" required><br><br>
+
+        <label>URL da Imagem:</label><br>
+        <input type="text" name="imagem"><br><br>
+
+        <input type="submit" value="Cadastrar Produto">
+    </form>
+</body>
+</html>
